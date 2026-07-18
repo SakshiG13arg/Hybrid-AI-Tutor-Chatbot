@@ -1,4 +1,4 @@
-# 🤖 Hybrid AI Tutor Chatbot
+<img width="1920" height="1080" alt="Screenshot (288)" src="https://github.com/user-attachments/assets/cf4bae17-69a9-41aa-821f-c590e0f622b6" /># 🤖 Hybrid AI Tutor Chatbot
 
 A Hybrid AI Tutor Chatbot built using Google's Gemini API and Retrieval-Augmented Generation (RAG).
 
@@ -96,3 +96,7 @@ python app.py
 - Streamlit Interface
 - Image Understanding
 - Deployment
+
+## Demo
+
+![Chatbot Demo](chatbot_demo.png)
