@@ -40,7 +40,7 @@ AI Chatbot
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI-Tutor-Chatbot.git
+git clone https://github.com/SakshiG13arg/Hybrid-AI-Tutor-Chatbot.git
 ```
 
 Go inside the folder
