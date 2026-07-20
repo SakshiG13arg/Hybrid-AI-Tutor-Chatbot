@@ -1,19 +1,23 @@
 # 🤖 Hybrid AI Tutor Chatbot
 
-A Hybrid AI Tutor Chatbot built using Google's Gemini API and Retrieval-Augmented Generation (RAG).
+A Hybrid AI Tutor Chatbot built using **Google Gemini API** and **Retrieval-Augmented Generation (RAG)** to answer questions from uploaded PDF documents while also supporting general AI conversations.
 
-## Features
+---
+
+## ✨ Features
 
 - 📄 Chat with PDF documents
-- 🤖 General AI Chat using Gemini
-- 🧠 Conversation Memory
-- 🔍 FAISS Vector Search
-- 📚 RAG Pipeline
-- 📝 PDF Text Extraction
-- ⚡ Configurable Generation Parameters
-- 🛡 Error Handling
+- 🤖 General AI chat powered by Gemini
+- 🧠 Conversation memory
+- 🔍 FAISS vector similarity search
+- 📚 Retrieval-Augmented Generation (RAG)
+- 📝 Automatic PDF text extraction and chunking
+- ⚡ Configurable generation parameters
+- 🛡 Robust error handling
 
-## Tech Stack
+---
+
+## 🛠 Tech Stack
 
 - Python
 - Google Gemini API
@@ -21,81 +25,104 @@ A Hybrid AI Tutor Chatbot built using Google's Gemini API and Retrieval-Augmente
 - NumPy
 - pdfplumber
 - LangChain Text Splitter
+- python-dotenv
 
-## Project Structure
+---
 
-```
-AI Chatbot
+## 📂 Project Structure
+
+```text
+Hybrid-AI-Tutor-Chatbot/
 │
-├── utils
-├── data
+├── utils/
+│   ├── chunking.py
+│   ├── embeddings.py
+│   ├── generation.py
+│   ├── memory.py
+│   ├── pdf_loader.py
+│   ├── prompts.py
+│   ├── rag.py
+│   └── vector_store.py
+│
+├── data/
 ├── app.py
 ├── config.py
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
-## Installation
+---
 
-Clone the repository
+## 🚀 Installation
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/SakshiG13arg/Hybrid-AI-Tutor-Chatbot.git
 ```
 
-Go inside the folder
+### 2. Navigate to the project directory
 
 ```bash
-AI-Tutor-Chatbot
+cd Hybrid-AI-Tutor-Chatbot
 ```
 
-Create a virtual environment
+### 3. Create a virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate it
+### 4. Activate the virtual environment
 
-Windows PowerShell
+**Windows (PowerShell)**
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-Install dependencies
+### 5. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file
+### 6. Create a `.env` file
 
-```
+```text
 GEMINI_API_KEY=YOUR_API_KEY
 ```
 
-Run the chatbot
+### 7. Run the chatbot
 
 ```bash
 python app.py
 ```
 
-## Current Features
+---
 
-- Hybrid Chatbot
-- RAG
-- Memory
-- FAISS
-- PDF Question Answering
+## 💡 How It Works
 
-## Future Improvements
+1. Upload a PDF (optional).
+2. The chatbot extracts and chunks the document.
+3. Gemini Embedding API converts chunks into vector embeddings.
+4. FAISS indexes the embeddings for semantic search.
+5. User questions are embedded and matched with the most relevant chunks.
+6. Retrieved context and conversation history are combined into a prompt.
+7. Gemini generates a context-aware response.
 
-- Tool Calling
-- AI Agent
-- Streamlit Interface
-- Image Understanding
-- Deployment
+---
+
+## 📌 Current Capabilities
+
+- Hybrid AI chatbot (General + PDF mode)
+- Retrieval-Augmented Generation (RAG)
+- Semantic search using FAISS
+- Conversation memory
+- PDF-based Question Answering
+- Configurable Gemini generation settings
+- Modular Python architecture
 
 ## Demo
 
