@@ -46,7 +46,7 @@ git clone https://github.com/SakshiG13arg/Hybrid-AI-Tutor-Chatbot.git
 Go inside the folder
 
 ```bash
-cd AI-Tutor-Chatbot
+AI-Tutor-Chatbot
 ```
 
 Create a virtual environment
